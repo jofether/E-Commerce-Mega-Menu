@@ -2,10 +2,14 @@ import React from 'react';
 
 export default function ProductCard({ image, title, price, category, onAddToCart, isNew }) {
   return (
-    <div className="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105">
+    <div className="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 p-64">
+      {/* [BUG - SPACING] Added p-64 (excessive padding) causing content to overflow and misalign */}
+      {/* [FIX] Remove p-64 from className */}
       {/* Image Container */}
       <div className="relative h-64 bg-gray-200 overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-500 font-bold text-2xl">
+        <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-99 font-bold text-2xl">
+          {/* [BUG - TYPO] text-gray-99 is invalid Tailwind class (should be text-gray-900) */}
+          {/* [FIX] Change text-gray-99 to text-gray-900 */}
           {image}
         </div>
 

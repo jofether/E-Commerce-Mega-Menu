@@ -2,7 +2,9 @@ import React from 'react';
 
 export default function Hero({ onShopNow }) {
   return (
-    <header className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden">
+    <header className="relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden -mb-40">
+      {/* [BUG - SPACING] Added -mb-40 (negative margin-bottom) causing massive overlap with next section */}
+      {/* [FIX] Remove -mb-40 from className */}
       {/* Animated Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-96 h-96 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>

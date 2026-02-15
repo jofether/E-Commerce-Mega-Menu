@@ -3,9 +3,13 @@ import MegaMenu from './MegaMenu';
 
 export default function Navbar({ cartCount, onCartClick, showCart, onSearchClick, showSearch }) {
   return (
-    <nav className="relative bg-gray-900 text-white z-50 shadow-lg">
+    <nav className="relative bg-gray-900 text-white z-0 shadow-lg">
+      {/* [BUG - LAYERS] z-50 changed to z-0, navbar will appear behind content */}
+      {/* [FIX] Change z-0 back to z-50 */}
       <div className="max-w-7xl mx-auto px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex-col items-center justify-between h-16">
+          {/* [BUG - LAYOUT] flex changed to flex-col, breaking horizontal navbar layout */}
+          {/* [FIX] Change flex-col back to flex */}
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <span className="font-black text-2xl tracking-wider">LUXE.</span>

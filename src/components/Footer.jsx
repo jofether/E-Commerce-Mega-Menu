@@ -10,7 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* About */}
           <div>
-            <h4 className="font-bold text-lg mb-4 text-yellow-400">LUXE.</h4>
+            <h4 className="font-bold text-lg mb-4 text-yellow-5">LUXE.</h4>
+            {/* [BUG - TYPO] text-yellow-5 is invalid Tailwind class (should be text-yellow-400 or similar) */}
+            {/* [FIX] Change text-yellow-5 to text-yellow-400 */}
             <p className="text-gray-400 text-sm leading-relaxed">
               Premium fashion for the modern lifestyle. We curate the finest collections from around the world.
             </p>
@@ -30,12 +32,14 @@ export default function Footer() {
           {/* Customer Service */}
           <div>
             <h4 className="font-bold text-lg mb-4">Help</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-gray-800">
               <li><a href="#" className="hover:text-yellow-400 transition">Contact Us</a></li>
               <li><a href="#" className="hover:text-yellow-400 transition">Shipping Info</a></li>
               <li><a href="#" className="hover:text-yellow-400 transition">Returns</a></li>
               <li><a href="#" className="hover:text-yellow-400 transition">FAQ</a></li>
             </ul>
+            {/* [BUG - COLOR & CONTRAST] text-gray-800 on dark gray-900 background creates very low contrast, making text hard to read */}
+            {/* [FIX] Change text-gray-800 to text-gray-400 to improve contrast */}
           </div>
 
           {/* Legal */}

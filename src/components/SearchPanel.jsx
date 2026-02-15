@@ -28,8 +28,10 @@ export default function SearchPanel({ isOpen, onClose, onSearch }) {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           autoFocus
-          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition"
+          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition bg-white text-white"
         />
+        {/* [BUG - COLOR & CONTRAST] White text (text-white) on white background (bg-white) makes input text invisible */}
+        {/* [FIX] Change text-white to text-gray-900 or remove the text-white class */}
 
         <div className="flex flex-col gap-3">
           <button
