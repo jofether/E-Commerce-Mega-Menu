@@ -7,8 +7,6 @@ export default function CartPanel({ isOpen, onClose, cartItems, onRemoveItem, ca
 
   return (
     <div className="absolute top-16 right-0 z-10 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400">
-      {/* [BUG - LAYERS] z-10 is too low, navbar (z-0 due to earlier bug) and other content may overlap this */}
-      {/* [FIX] Change z-10 back to z-40 to ensure modal appears above other content */}
       <div className="space-y-4">
         {/* Header */}
         <div>

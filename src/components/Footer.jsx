@@ -11,8 +11,6 @@ export default function Footer() {
           {/* About */}
           <div>
             <h4 className="font-bold text-lg mb-4 text-yellow-5">LUXE.</h4>
-            {/* [BUG - TYPO] text-yellow-5 is invalid Tailwind class (should be text-yellow-400 or similar) */}
-            {/* [FIX] Change text-yellow-5 to text-yellow-400 */}
             <p className="text-gray-400 text-sm leading-relaxed">
               Premium fashion for the modern lifestyle. We curate the finest collections from around the world.
             </p>
@@ -38,8 +36,6 @@ export default function Footer() {
               <li><a href="#" className="hover:text-yellow-400 transition">Returns</a></li>
               <li><a href="#" className="hover:text-yellow-400 transition">FAQ</a></li>
             </ul>
-            {/* [BUG - COLOR & CONTRAST] text-gray-800 on dark gray-900 background creates very low contrast, making text hard to read */}
-            {/* [FIX] Change text-gray-800 to text-gray-400 to improve contrast */}
           </div>
 
           {/* Legal */}

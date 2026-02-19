@@ -84,8 +84,6 @@ function App() {
               />
             ))}
           </div>
-          {/* [BUG - LAYOUT] Changed grid-cols-1 md:grid-cols-2 lg:grid-cols-4 to just grid-cols-1, products display in single column instead of responsive grid */}
-          {/* [FIX] Change grid-cols-1 back to "grid-cols-1 md:grid-cols-2 lg:grid-cols-4" */}
         </div>
       </section>
 
