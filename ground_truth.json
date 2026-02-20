@@ -1,0 +1,155 @@
+{
+  "repository": "E-Commerce Mega Menu",
+  "bugs": [
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/App.jsx",
+      "line_number": 74,
+      "clean_code": "          <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8\">",
+      "buggy_code": "          <div className=\"grid grid-cols-1 gap-8\">",
+      "css_selector": ".product-grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/CartPanel.jsx",
+      "line_number": 9,
+      "clean_code": "    <div className=\"absolute top-16 right-0 z-40 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
+      "buggy_code": "    <div className=\"absolute top-16 right-0 z-10 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
+      "css_selector": ".cart-panel",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-yellow",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 13,
+      "clean_code": "            <h4 className=\"font-bold text-lg mb-4 text-yellow-400\">LUXE.</h4>",
+      "buggy_code": "            <h4 className=\"font-bold text-lg mb-4 text-yellow-5\">LUXE.</h4>",
+      "css_selector": ".footer-brand",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-gray",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 33,
+      "clean_code": "            <ul className=\"space-y-2 text-sm text-gray-400\">",
+      "buggy_code": "            <ul className=\"space-y-2 text-sm text-gray-800\">",
+      "css_selector": ".footer-links",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin-bottom",
+      "file_modified": "src/components/Hero.jsx",
+      "line_number": 5,
+      "clean_code": "    <header className=\"relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden\">",
+      "buggy_code": "    <header className=\"relative bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 h-[600px] flex items-center justify-center overflow-hidden -mb-40\">",
+      "css_selector": ".hero-section",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 6,
+      "clean_code": "    <nav className=\"relative bg-gray-900 text-white z-50 shadow-lg\">",
+      "buggy_code": "    <nav className=\"relative bg-gray-900 text-white z-0 shadow-lg\">",
+      "css_selector": ".navbar",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 8,
+      "clean_code": "        <div className=\"flex items-center justify-between h-16\">",
+      "buggy_code": "        <div className=\"flex-col items-center justify-between h-16\">",
+      "css_selector": ".navbar-container",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 5,
+      "clean_code": "    <div className=\"group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105\">",
+      "buggy_code": "    <div className=\"group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:scale-105 p-64\">",
+      "css_selector": ".product-card",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-gray",
+      "file_modified": "src/components/ProductCard.jsx",
+      "line_number": 8,
+      "clean_code": "        <div className=\"w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-500 font-bold text-2xl\">",
+      "buggy_code": "        <div className=\"w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center text-gray-99 font-bold text-2xl\">",
+      "css_selector": ".product-image",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/components/SearchPanel.jsx",
+      "line_number": 31,
+      "clean_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition\"",
+      "buggy_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition bg-white text-white\"",
+      "css_selector": ".search-input",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
