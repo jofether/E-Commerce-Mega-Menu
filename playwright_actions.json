@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "name": "bug-2-OpenCartPanel",
+      "selector": "nav button:has-text('Cart')"
+    },
+    {
+      "name": "bug-10-OpenSearchPanel",
+      "selector": "nav button:has-text('Search')"
+    }
+  ]
+}
