@@ -27,7 +27,7 @@
       "line_number": 9,
       "neg_code": "    <div className=\"absolute top-16 right-0 z-40 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
       "pos_code": "    <div className=\"absolute top-16 right-0 z-10 w-96 bg-white shadow-2xl p-6 max-h-96 overflow-y-auto border-l-4 border-yellow-400\">",
-      "css_selector": "div.absolute.right-0.w-96.max-h-96.overflow-y-auto.border-l-4.border-yellow-400",
+      "css_selector": "div.absolute.right-0.w-96.bg-white",
       "bounding_box": {
         "x": 0,
         "y": 0,
@@ -163,7 +163,7 @@
       "line_number": 31,
       "neg_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition\"",
       "pos_code": "          className=\"w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400 transition bg-white text-white\"",
-      "css_selector": "input[type=\"text\"][placeholder*=\"summer jackets\"]",
+      "css_selector": "input[type=\"text\"].px-4.py-3",
       "bounding_box": {
         "x": 340,
         "y": 200,
